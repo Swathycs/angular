@@ -1,0 +1,20 @@
+<h1>My Custom Table</h1>
+<hr>
+
+<table id="users">
+  <tr>
+    <th *ngFor = "let column of headers">
+      {{column}}
+    </th>
+  </tr>
+
+  <tr *ngFor = "let row of rows">
+    <td *ngFor = "let column of headers">
+     {{rows}}
+    </td>
+  </tr>
+</table>
+<Menu>MenuBar</Menu>
+<div>
+<ejs-menu [items]='menuItems'></ejs-menu>
+</div>

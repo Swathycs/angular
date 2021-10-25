@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div >
+    <ul class="display">
+      <a class="navbar-brand" routerLink='/' routerLinkActive="active" >
+
+      <h2>WELCOME</h2></a>
+  
+      <li [routerLink]="['/home']">HOME</li>
+    <li  [routerLink]="['/project']">PROJECT</li>
+    <li  [routerLink]="['/grid']">GRID</li>
+    <li  [routerLink]="['/table']">TABLE</li>
+    <li  [routerLink]="['/fileuploader']">FILEMANAGER</li>
+    </ul>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>  

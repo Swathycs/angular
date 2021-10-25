@@ -1,0 +1,14 @@
+<!-- First Project : <input class="e-input" type="text" placeholder="Enter Project Name" />
+<button ejs-button (click)="gotoproject()">Project1</button> -->
+
+<div class="display">
+    <button ejs-button [isPrimary]="true" (click)="gotoproject($event)"> Project</button>
+        <ejs-toast #element (created)="onCreate($event)" [position]='position'>
+              <ng-template #title>
+                  <div>Go to the project</div>
+              </ng-template>
+              <ng-template #content>
+                  <div>Successful</div>
+              </ng-template>
+    </ejs-toast>
+    </div>
